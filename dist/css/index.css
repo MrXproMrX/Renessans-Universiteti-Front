@@ -68,7 +68,7 @@
   src: url("../fonts/EBGaramond-ExtraBold.ttf") format("truetype");
   font-weight: 800;
 }
-.footer__icons__link, .footer__menu__link, .connect_us__button, .educational__all__link, .educational__icons svg path, .educational__item, .about__link, .slider__link, .slider__list .slick-next, .slider__list .slick-prev, .slider__list li, .header__bottom__none__menu li, .header__bottom__links span, .header__bottom__links, .header__bottom__link, .newsIn__contacts__link, .newsAll__pagination__link, .newsAll__pagination__next, .newsAll__filter__link, .newsAll__filter__data, .newsAll__filter__title span, .newsAll__filter__title, .admissionsBachelor__link, .e_reception__button, .vacancies__text, .vacancies__title__h3 span, .vacancies__title__h3, .leadership__text__next, .leadership__button__open {
+.footer__icons__link, .footer__menu__link, .connect_us__button, .educational__all__link, .educational__icons svg path, .educational__item, .about__link, .slider__link, .slider__list .slick-next, .slider__list .slick-prev, .slider__list li, .header__bottom__none__menu li, .header__bottom__none, .header__bottom__links span, .header__bottom__links, .header__bottom__link, .header__active, .newsIn__contacts__link, .newsAll__pagination__link, .newsAll__pagination__next, .newsAll__filter__link, .newsAll__filter__data, .newsAll__filter__title span, .newsAll__filter__title, .admissionsBachelor__link, .e_reception__button, .vacancies__text, .vacancies__title__h3 span, .vacancies__title__h3, .leadership__text__next, .leadership__button__open {
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -2231,6 +2231,13 @@ h1, h2 {
   align-items: center;
   position: relative;
 }
+.header__active {
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
 .header__en__link {
   font-size: 0.875rem;
   font-weight: 600;
@@ -2394,7 +2401,11 @@ h1, h2 {
   left: 0;
   align-items: flex-start;
   grid-gap: 60px;
-  display: none;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 250ms ease 0s, visibility 250ms ease 0s, transform 250ms ease 0s;
 }
 .header__bottom__none__menu {
   display: flex;
@@ -2466,7 +2477,9 @@ h1, h2 {
 }
 
 .header__bottom__menu li:hover > .header__bottom__none {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }
 
 .slider {
@@ -3525,6 +3538,12 @@ h1, h2 {
   }
   .header__bottom__menu li:hover > .header__bottom__none {
     display: none;
+  }
+  .header__bottom__none {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
   }
   .header__bottom__none__menu li {
     padding-left: 16px;
