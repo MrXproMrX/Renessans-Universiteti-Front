@@ -328,26 +328,68 @@
     <!-- aboutUniversity end -->
 
 
-   <!-- E-reception start -->
+    <!-- E-reception start -->
 
     <div class="e_reception">
         <section class="container">
             <div class="e_reception__cart">
                 <form action="#!" class="e_reception__form">
-                    <input type="text" placeholder="ФИО" class="e_reception__input">
-                    <input type="date" placeholder="Дата рождения" class="e_reception__input">
-                    <input type="text" placeholder="Паспортные данные" class="e_reception__input">
-                    <input type="text" placeholder="Адрес" class="e_reception__input">
-                    <input type="text" placeholder="Индекс" class="e_reception__input">
-                    <input type="email" placeholder="Электронная почта" class="e_reception__input">
-                    <input type="tel" placeholder="Телефон" class="e_reception__input">
-                    <textarea class="e_reception__textarea" placeholder="Текст вопроса"></textarea>
-                    <label class="input-wrap">
-                        <input type="checkbox" class="checkboxNone">
-                        <span class="checkmark"></span>
-                        <h3 class="e_reception__title__h3">Мои персональные данные предоставлены мной самостоятельно, я даю согласие на их обработку</h3>
+                    <label class="e_reception__label">
+                        <h4 class="e_reception__title__h4">F.I.O*</h4>
+                        <input type="text" placeholder="FIO" class="e_reception__input">
                     </label>
-                    <button type="submit" class="e_reception__button buttonDisabled">Отправить <i class="fas fa-chevron-right"></i></button>
+                    
+                    <label class="e_reception__label">
+                        <h4 class="e_reception__title__h4">Ta'lim turi*</h4>
+                        <select class="e_reception__select">
+                            <option selected>Kunduzgi</option>
+                            <option>Kechki</option>
+                            <option>Sirtqi</option>
+                        </select>
+                    </label>
+
+                    <label class="e_reception__label">
+                        <h4 class="e_reception__title__h4">Kursni tanlang!*</h4>
+                        <select class="e_reception__select">
+                            <option selected>1 kurs</option>
+                            <option>2 kurs</option>
+                            <option>3  kurs</option>
+                        </select>
+                    </label>
+
+                    <section class="e_reception__label">
+                        <h4 class="e_reception__title__h4">Kursni tanlang!*</h4>
+                        <input name="file" type="file" name="file" id="field__file-1" class="field__file e_reception__input__file" multiple>
+                        <label for="field__file-1" class="e_reception__label__file">
+                            <h5 class="e_reception__title__file">Faylni tanlang</h5>
+                            <h4 class="e_reception__title__h4__file">
+                                Fayl tanlanmagan
+                            </h4>
+                        </label>
+                    </section>
+
+                    <section class="e_reception__label">
+                        <h4 class="e_reception__title__h4">Diplom yoki atestat*</h4>
+                        <input name="file" type="file" name="file" id="field__file-2" class="field__file e_reception__input__file" multiple>
+                        <label for="field__file-2" class="e_reception__label__file">
+                            <h5 class="e_reception__title__file">Faylni tanlang</h5>
+                            <h4 class="e_reception__title__h4__file">
+                                Fayl tanlanmagan
+                            </h4>
+                        </label>
+                    </section>
+
+                    <label class="e_reception__label">
+                        <h4 class="e_reception__title__h4">Shaxsiy telefon raqam*</h4>
+                        <input type="tel" value="+998 " class="e_reception__input">
+                    </label>
+
+                    <label class="e_reception__label">
+                        <h4 class="e_reception__title__h4">Ota yoki Ona telefon raqami</h4>
+                        <input type="tel" value="+998 " class="e_reception__input">
+                    </label>
+                   
+                    <button type="submit" class="e_reception__button">Jo’natish <i class="fas fa-chevron-right"></i></button>
                 </form>
             </div>
         </section>

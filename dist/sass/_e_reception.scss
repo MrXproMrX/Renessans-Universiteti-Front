@@ -9,17 +9,36 @@
         align-items:flex-start;
         flex-direction: column;
         grid-gap: 20px;
+    }
 
-        label{
-            display: flex;
-            align-items:center;
-            grid-gap: 20px;
-            margin: 10px 0;
+    &__title__h4{
+        @include fontAll(16px,500,$title);
+        line-height: 135%;
+        text-align: start;
+    }
+
+    &__label{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+        width: 100%;
+        align-items:flex-start;
+    }
+
+    &__input{
+        width: 100%;
+        height: 60px;
+        background-color:$max;
+        border:none;
+        outline: none;
+        padding: 10px 30px;
+        @include fontAll(1rem,500,$link);
+        option{
+            @include fontAll(1rem,500,$link);
         }
     }
 
-
-    &__input{
+    &__select{
         width: 100%;
         height: 60px;
         background-color:$max;
@@ -30,6 +49,33 @@
         &::placeholder{
             @include fontAll(1rem,500,#133654a1);
         }
+    }
+
+    &__title__file{
+        padding: 15px 35px;
+        background-color:#133654;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        @include fontAll(16px,500,$fff);
+        line-height: 100%;
+    }
+
+    &__input__file{
+        display: none;
+    }
+
+    &__label__file{
+        display: flex;
+        align-items:center;
+        grid-gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__title__h4__file{
+        @include fontAll(16px,500,$title);
     }
 
     &__textarea{
@@ -86,71 +132,14 @@
     }
 }
 
-.input-wrap {
-    display: flex;
-    align-items:center;
-    position: relative;
-    padding-left: 40px;
-    margin-top: 15px;
-    cursor: pointer;
-  
-    /* Hide the browser's default radio button */
-
-    input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-      height: 0;
-      width: 0;
-    }
-  
-    /* Create a custom radio button */
-    .checkmark {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 30px;
-      width: 30px;
-      background-color: #ECECEC;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-    }
-    
-    /* When the radio button is checked, add a blue background */
-    input:checked ~ .checkmark {
-        &::after{
-            content: "";
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            background-color:$fon;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-            -moz-transform: translate(-50%,-50%);
-            -ms-transform: translate(-50%,-50%);
-            -o-transform: translate(-50%,-50%);
-        }
-    }
-
-}
-
 // e_reception end
 
 @media (max-width:1200px){
     .e_reception__input,
-    .e_reception__button{
+    .e_reception__button,
+    .e_reception__select{
         height: 50px;
+        padding: 10px 20px;
     }
 
     .e_reception__textarea{
@@ -159,5 +148,19 @@
 
     .e_reception__form {
         grid-gap: 15px;
+    }
+
+    .e_reception__label__file {
+        grid-gap: 15px;
+    }
+}
+
+@media (max-width:650px){
+    .e_reception__label__file {
+        grid-gap: 10px;
+    }
+
+    .e_reception__title__file{
+        padding: 15px 20px;
     }
 }

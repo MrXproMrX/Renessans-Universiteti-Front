@@ -79,33 +79,6 @@ buttons_6.forEach(function(button, index) {
 
 // -------------------------------===========-------------------------------
 
-const checkboxNone = document.querySelector('.checkboxNone');
-const buttonDisabled = document.querySelector('.buttonDisabled');
-
-if(checkboxNone){
-  buttonDisabled.disabled = !checkboxNone.checked
-  if( buttonDisabled.disabled){
-    buttonDisabled.style.backgroundColor = '#880019c9'
-    buttonDisabled.style.color = '#fff'
-  }
-  
-  checkboxNone.onclick = () => {
-
-    if(checkboxNone.checked == true){
-      buttonDisabled.disabled = !checkboxNone.checked
-      buttonDisabled.style.backgroundColor = '#880019'
-    }
-
-    if(checkboxNone.checked == false){
-      buttonDisabled.disabled = !checkboxNone.checked
-      buttonDisabled.style.backgroundColor = '#880019c9'
-    }
-
-  }
-}
-
-// -------------------------------===========-------------------------------
-
 const leadershipList = document.querySelector('.leadership__list');
 if(leadershipList){
   const leadershipItem = document.querySelectorAll('.leadership__item');
@@ -178,3 +151,23 @@ $(function(){
 });
 
 // -------------------------------===========-------------------------------
+
+const e_reception = document.querySelector('.e_reception');
+if(e_reception){
+  let fields = document.querySelectorAll('.field__file');
+  Array.prototype.forEach.call(fields, function (input) {
+    let label = input.nextElementSibling,
+      labelVal = label.querySelector('.e_reception__title__h4__file').innerText;
+
+    input.addEventListener('change', function (e) {
+      let countFiles = '';
+      if (this.files && this.files.length >= 1)
+        countFiles = this.files.length;
+
+      if(countFiles)
+        label.querySelector('.e_reception__title__h4__file').innerText = 'Выбрано файлов:' + countFiles;
+      else
+        label.querySelector('.e_reception__title__h4__file').innerText = labelVal;
+    });
+  });
+}
