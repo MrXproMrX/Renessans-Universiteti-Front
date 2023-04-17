@@ -17,6 +17,7 @@
 @import '_research';
 @import '_international';
 @import '_careers.scss';
+@import '_library';
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -1365,7 +1366,8 @@ h1,h2{
     .eventsIn__cart,
     .researchAll__cart,
     .research__cart,
-    .careers__cart{
+    .careers__cart,
+    .library__cart{
        margin-left: 60px;
        margin-right: 60px;
     }
@@ -1406,7 +1408,8 @@ h1,h2{
     .researchAll__cart__item,
     .researchStatistics,
     .international,
-    .careers{
+    .careers,
+    .library{
         margin-bottom: 60px;
     }
 
@@ -1776,7 +1779,9 @@ h1,h2{
     .researchAll__cart__item,
     .researchStatistics,
     .international,
-    .careers{
+    .careers,
+    .library,
+    .library__list__menu{
         margin-bottom: 30px;
     }
 
@@ -1816,7 +1821,8 @@ h1,h2{
     .eventsIn__cart,
     .researchAll__cart,
     .research__cart,
-    .careers__cart{
+    .careers__cart,
+    .library__cart{
        margin-left: 30px;
        margin-right: 30px;
     }
