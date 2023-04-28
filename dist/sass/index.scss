@@ -1228,10 +1228,17 @@ h1,h2{
         }
     }
 
+    &__logo{
+        @include fiximg(110px,110px,true);
+        img{
+            object-position:center center;
+        }
+    }
+
     &__item__menu{
         display: flex;
         align-items:flex-start;
-        grid-gap: 70px;
+        grid-gap: 100px;
     }
 
     &__menu{
@@ -1267,20 +1274,20 @@ h1,h2{
     &__list__logo{
         display: flex;
         align-items:flex-start;
-        align-items:center;
-        grid-gap: 40px;
+        grid-gap: 20px;
+        flex-direction:column;
     }
 
     &__icons__link{
-        width: 34px;
-        height: 34px;
+        width: 26px;
+        height: 26px;
         background-color:rgba(240, 246, 249, 0.5);
         border-radius:50%;
         -webkit-border-radius:50%;
         -moz-border-radius:50%;
         -ms-border-radius:50%;
         -o-border-radius:50%;
-        @include fontAll(18px,400,$fff);
+        @include fontAll(14px,400,$fff);
         line-height: 100%;
         display: flex;
         align-items:center;
@@ -1295,8 +1302,10 @@ h1,h2{
 
     &__icons__menu{
         display: flex;
-        grid-gap: 20px;
-        flex-direction: column;
+        grid-gap: 15px;
+        align-items:center;
+        width: 100%;
+        justify-content:space-between;
     }
 
     &__bottom{
@@ -1321,12 +1330,6 @@ h1,h2{
             margin-left: 5px;
             color:rgba(255, 255, 255, 0.767);
         }
-    }
-
-    &__item__address{
-        display: flex;
-        align-items:flex-start;
-        grid-gap: 70px;
     }
 }
 
@@ -1638,9 +1641,8 @@ h1,h2{
         grid-template-columns: repeat(2,1fr);
     }
 
-    .footer__item__address,
     .footer__item__menu{
-        grid-gap: 50px;
+        grid-gap: 80px;
     }
 
     .footer__bottom__title {
@@ -1666,6 +1668,10 @@ h1,h2{
     .about__list{
         grid-template-columns: repeat(1,1fr);
         grid-gap: 30px;
+    }
+
+    .footer__item__menu{
+        grid-gap: 50px;
     }
 
     .slider__title__h1 {
@@ -1827,8 +1833,17 @@ h1,h2{
        margin-right: 30px;
     }
 
+    .footer__item__menu {
+        grid-gap: 0px;
+    }
+
     .slider__cart{
         padding: 0px 30px;
+    }
+
+    .footer__list {
+        justify-content: center;
+        align-items: center;
     }
 
     .slider__list .slick-next,
@@ -1836,8 +1851,12 @@ h1,h2{
         display: none !important;
     }
 
-    .footer__item__address{
-        grid-gap: 30px;
+    .footer__list__address {
+        grid-gap: 15px;
+    }
+
+    .footer__list{
+        grid-gap: 20px;
     }
 
     .footer__menu{
@@ -1905,13 +1924,12 @@ h1,h2{
         height: 350px;
     }
 
-    .footer__list {
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
     .header__title__logo {
         font-size: 16px;
+    }
+
+    .footer__bottom__title {
+        font-size: 12px;
     }
 
     .header__list {
@@ -1950,15 +1968,6 @@ h1,h2{
     .advantages__list__menu li {
         padding: 20px;
     }
-
-    .footer__item__address{
-        flex-direction: column;
-        grid-gap: 30px;
-    }
-    
-    .footer__list__logo{
-        grid-gap: 20px;
-    }    
     
     .header__list {
         grid-gap: 10px;
@@ -1969,11 +1978,6 @@ h1,h2{
         grid-template-areas: "imags imags" "section icons";
         justify-content: space-between;
         grid-gap: 15px 5px;
-    }
-
-    .footer__logo {
-        width: 160px;
-        height: 160px;
     }
 
     .educational__img{

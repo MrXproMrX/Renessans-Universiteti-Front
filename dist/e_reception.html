@@ -1,402 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="foto/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="foto/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="foto/favicon/favicon-16x16.png">
-    <link rel="manifest" href="foto/favicon/site.webmanifest">
-    <link rel="mask-icon" href="foto/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="foto/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="foto/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="foto/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="foto/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="foto/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/fancybox-main.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/fancybox-main.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/slick.css" />
     <title>E-reception</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- header start -->
 
     <header>
-        <div class="header">
-            <section class="container">
-                <div class="header__cart">
-                    <div class="header__list">
+      <div class="header">
+        <section class="container">
+          <div class="header__cart">
+            <div class="header__list">
+              <div class="header__logo">
+                <a href="index.html">
+                  <img src="foto/logo.svg" alt="logo" />
+                  <h2 class="header__title__logo">
+                    Renessans Ta'lim universiteti
+                  </h2>
+                </a>
+              </div>
 
-                        <div class="header__logo">
-                            <a href="index.html">
-                                <img src="foto/logo.svg" alt="logo">
-                                <h2 class="header__title__logo">Renessans Ta'lim universiteti</h2>
-                            </a>
-                        </div>
+              <section
+                class="header__bottom__burger__menu sidenav"
+                id="slide-out"
+              >
+                <ul class="header__bottom__menu">
+                  <li>
+                    <h4 class="header__bottom__links">
+                      University
+                      <span><i class="fas fa-chevron-down"></i></span>
+                    </h4>
 
-                        <section class="header__bottom__burger__menu sidenav" id="slide-out">
-                            <ul class="header__bottom__menu">
-                                <li>
-                                    <h4 class="header__bottom__links">
-                                        University
-                                        <span><i class="fas fa-chevron-down"></i></span>
-                                    </h4>
-    
-                                    <nav class="header__bottom__none">
-                                        <ul class="header__bottom__none__menu">
-    
-                                            <li>
-                                                <a href="aboutUniversity.html" class="header__bottom__link">
-                                                    About university
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a href="leadership.html" class="header__bottom__link">
-                                                    Leadership
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a href="structure.html" class="header__bottom__link">
-                                                    Structure
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a href="normsStatements.html" class="header__bottom__link">
-                                                    Norms & statements
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a href="departmentsStaff.html" class="header__bottom__link">
-                                                    Departments & staff
-                                                </a>
-                                            </li>
+                    <nav class="header__bottom__none">
+                      <ul class="header__bottom__none__menu">
+                        <li>
+                          <a
+                            href="aboutUniversity.html"
+                            class="header__bottom__link"
+                          >
+                            About university
+                          </a>
+                        </li>
 
-                                            <li>
-                                                <a href="labourUnion.html" class="header__bottom__link">
-                                                    Labour union
-                                                </a>
-                                            </li>
-    
-                                        </ul>
-    
-                                        <ul class="header__bottom__none__menu">
+                        <li>
+                          <a
+                            href="leadership.html"
+                            class="header__bottom__link"
+                          >
+                            Leadership
+                          </a>
+                        </li>
 
-                                            <li>
-                                                <a href="partners.html" class="header__bottom__link">
-                                                    Partners
-                                                </a>
-                                            </li>
+                        <li>
+                          <a href="structure.html" class="header__bottom__link">
+                            Structure
+                          </a>
+                        </li>
 
-                                            <li>
-                                                <a href="jobVacancies.html" class="header__bottom__link">
-                                                    Job vacancies
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a href="e_reception.html" class="header__bottom__link">
-                                                    E-reception
-                                                </a>
-                                            </li>
+                        <li>
+                          <a
+                            href="normsStatements.html"
+                            class="header__bottom__link"
+                          >
+                            Norms & statements
+                          </a>
+                        </li>
 
-                                            <li>
-                                                <a href="academicCouncil.html" class="header__bottom__link">
-                                                    Academic Council
-                                                </a>
-                                            </li>
+                        <li>
+                          <a
+                            href="departmentsStaff.html"
+                            class="header__bottom__link"
+                          >
+                            Departments & staff
+                          </a>
+                        </li>
 
-                                        </ul>
-                                    </nav>
-                                </li>  
-    
-                                <li>
-                                    <h4 class="header__bottom__links">
-                                        Academics
-                                        <span><i class="fas fa-chevron-down"></i></span>
-                                    </h4>
-    
-                                    <nav class="header__bottom__none">
-                                        <ul class="header__bottom__none__menu">
-                                            <li>
-                                                <a href="bachelor.html" class="header__bottom__link">
-                                                    Bachelor
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a href="bachelor.html" class="header__bottom__link">
-                                                    Master
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </li>
-    
-                                <li>
-                                    <h4 class="header__bottom__links">
-                                        Admissions
-                                        <span><i class="fas fa-chevron-down"></i></span>
-                                    </h4>
+                        <li>
+                          <a
+                            href="labourUnion.html"
+                            class="header__bottom__link"
+                          >
+                            Labour union
+                          </a>
+                        </li>
+                      </ul>
 
-                                    <nav class="header__bottom__none">
-                                        <ul class="header__bottom__none__menu">
-                                            <li>
-                                                <a href="admissionsBachelor.html" class="header__bottom__link">
-                                                    Bachelor
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a href="admissionsMaster.html" class="header__bottom__link">
-                                                    Master
-                                                </a>
-                                            </li>
+                      <ul class="header__bottom__none__menu">
+                        <li>
+                          <a href="partners.html" class="header__bottom__link">
+                            Partners
+                          </a>
+                        </li>
 
-                                            <li>
-                                                <a href="eveningEducation.html" class="header__bottom__link">
-                                                    Evening education
-                                                </a>
-                                            </li>
+                        <li>
+                          <a
+                            href="jobVacancies.html"
+                            class="header__bottom__link"
+                          >
+                            Job vacancies
+                          </a>
+                        </li>
 
-                                            <li>
-                                                <a href="extramuralEducation.html" class="header__bottom__link">
-                                                    Extramural education
-                                                </a>
-                                            </li>
+                        <li>
+                          <a
+                            href="e_reception.html"
+                            class="header__bottom__link"
+                          >
+                            E-reception
+                          </a>
+                        </li>
 
-                                            <li>
-                                                <a href="transfer.html" class="header__bottom__link">
-                                                    Transfer
-                                                </a>
-                                            </li>
+                        <li>
+                          <a
+                            href="academicCouncil.html"
+                            class="header__bottom__link"
+                          >
+                            Academic Council
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
 
-                                            <li>
-                                                <a href="tuitionFees.html" class="header__bottom__link">
-                                                    Tuition fees
-                                                </a>
-                                            </li>
+                  <li>
+                    <h4 class="header__bottom__links">
+                      Academics
+                      <span><i class="fas fa-chevron-down"></i></span>
+                    </h4>
 
-                                            <li>
-                                                <a href="scholarships.html" class="header__bottom__link">
-                                                    Scholarships
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </li>
-    
-                                <li>
-                                    <a href="research.html " class="header__bottom__link">Research</a>
-                                </li>
-    
-                                <li>
-                                    <a href="international.html" class="header__bottom__link">International</a>
-                                </li>
+                    <nav class="header__bottom__none">
+                      <ul class="header__bottom__none__menu">
+                        <li>
+                          <a href="bachelor.html" class="header__bottom__link">
+                            Bachelor
+                          </a>
+                        </li>
 
-                                <li> 
-                                    <h4 class="header__bottom__links">
-                                        Students
-                                        <span><i class="fas fa-chevron-down"></i></span>
-                                    </h4>
+                        <li>
+                          <a href="bachelor.html" class="header__bottom__link">
+                            Master
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
 
-                                    <nav class="header__bottom__none">
-                                        <ul class="header__bottom__none__menu">
-                                            <li>
-                                                <a href="studentsStudio.html" class="header__bottom__link">
-                                                    Students studio
-                                                </a>
-                                            </li>
+                  <li>
+                    <h4 class="header__bottom__links">
+                      Admissions
+                      <span><i class="fas fa-chevron-down"></i></span>
+                    </h4>
 
-                                            <li>
-                                                <a href="careers.html" class="header__bottom__link">
-                                                    Careers
-                                                </a>
-                                            </li>
+                    <nav class="header__bottom__none">
+                      <ul class="header__bottom__none__menu">
+                        <li>
+                          <a
+                            href="admissionsBachelor.html"
+                            class="header__bottom__link"
+                          >
+                            Bachelor
+                          </a>
+                        </li>
 
-                                            <li>
-                                                <a href="dormitory.html" class="header__bottom__link">
-                                                    Dormitory
-                                                </a>
-                                            </li>
+                        <li>
+                          <a
+                            href="admissionsMaster.html"
+                            class="header__bottom__link"
+                          >
+                            Master
+                          </a>
+                        </li>
 
-                                            <li>
-                                                <a href="foreignPartners.html" class="header__bottom__link">
-                                                    Foreign partners
-                                                </a>
-                                            </li>
+                        <li>
+                          <a
+                            href="eveningEducation.html"
+                            class="header__bottom__link"
+                          >
+                            Evening education
+                          </a>
+                        </li>
 
-                                        </ul>
-                                    </nav>
-                                </li>
-    
-                                <li>
-                                    <h4 class="header__bottom__links">
-                                        News
-                                        <span><i class="fas fa-chevron-down"></i></span>
-                                    </h4>
+                        <li>
+                          <a
+                            href="extramuralEducation.html"
+                            class="header__bottom__link"
+                          >
+                            Extramural education
+                          </a>
+                        </li>
 
-                                    <nav class="header__bottom__none">
-                                        <ul class="header__bottom__none__menu">
-    
-                                            <li>
-                                                <a href="news.html" class="header__bottom__link">
-                                                    news
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a href="events.html" class="header__bottom__link">
-                                                    Events
-                                                </a>
-                                            </li>
-    
-                                        </ul>
-                                    </nav>
-                                </li>
-                            </ul> 
-                        </section>
+                        <li>
+                          <a href="transfer.html" class="header__bottom__link">
+                            Transfer
+                          </a>
+                        </li>
 
-                        <section class="header__ru__list__caer">
+                        <li>
+                          <a
+                            href="tuitionFees.html"
+                            class="header__bottom__link"
+                          >
+                            Tuition fees
+                          </a>
+                        </li>
 
-                            <!-- language start -->
-                            
-                            <div class="header__ru">
-                                
-                                <div class="header__ru_cart dropdown-trigger"data-target='dropdown1'>
-                                    <a data-target='dropdown1' class="header__en__link">Ru</a>
-                                    <span><i class="fas fa-angle-down"></i></span>
-                                </div>
-                                
-                                <div class="header__ru_none dropdown-content" id='dropdown1'>
-                                    <div class="header__ru_list active">
-                                        <a href="#!-1" class="header__en__link">Ru</a>
-                                    </div>
-                                    
-                                    <div class="header__ru_list">
-                                        <a href="#!-2" class="header__en__link">En</a>
-                                    </div>
-                                    
-                                    <div class="header__ru_list">
-                                        <a href="#!-3" class="header__en__link">O’z</a>
-                                    </div>
-                                </div>
-                                
-                                <!-- language start -->
+                        <li>
+                          <a
+                            href="scholarships.html"
+                            class="header__bottom__link"
+                          >
+                            Scholarships
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
 
-                            </div>
-                            
-                            <button class="header__burger__none sidenav-trigger" data-target="slide-out"><i class="fas fa-bars"></i></button>
-                            
-                        </section>
-                        
+                  <li>
+                    <a href="research.html " class="header__bottom__link"
+                      >Research</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="international.html" class="header__bottom__link"
+                      >International</a
+                    >
+                  </li>
+
+                  <li>
+                    <h4 class="header__bottom__links">
+                      Students
+                      <span><i class="fas fa-chevron-down"></i></span>
+                    </h4>
+
+                    <nav class="header__bottom__none">
+                      <ul class="header__bottom__none__menu">
+                        <li>
+                          <a
+                            href="studentsStudio.html"
+                            class="header__bottom__link"
+                          >
+                            Students studio
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="careers.html" class="header__bottom__link">
+                            Careers
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="dormitory.html" class="header__bottom__link">
+                            Dormitory
+                          </a>
+                        </li>
+
+                        <li>
+                          <a
+                            href="foreignPartners.html"
+                            class="header__bottom__link"
+                          >
+                            Foreign partners
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+
+                  <li>
+                    <h4 class="header__bottom__links">
+                      News
+                      <span><i class="fas fa-chevron-down"></i></span>
+                    </h4>
+
+                    <nav class="header__bottom__none">
+                      <ul class="header__bottom__none__menu">
+                        <li>
+                          <a href="news.html" class="header__bottom__link">
+                            news
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="events.html" class="header__bottom__link">
+                            Events
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="header__ru__list__caer">
+                <!-- language start -->
+
+                <div class="header__ru">
+                  <div
+                    class="header__ru_cart dropdown-trigger"
+                    data-target="dropdown1"
+                  >
+                    <a data-target="dropdown1" class="header__en__link">Ru</a>
+                    <span><i class="fas fa-angle-down"></i></span>
+                  </div>
+
+                  <div class="header__ru_none dropdown-content" id="dropdown1">
+                    <div class="header__ru_list active">
+                      <a href="#!-1" class="header__en__link">Ru</a>
                     </div>
+
+                    <div class="header__ru_list">
+                      <a href="#!-2" class="header__en__link">En</a>
+                    </div>
+
+                    <div class="header__ru_list">
+                      <a href="#!-3" class="header__en__link">O’z</a>
+                    </div>
+                  </div>
+
+                  <!-- language start -->
                 </div>
-            </section>
-        </div>
+
+                <button
+                  class="header__burger__none sidenav-trigger"
+                  data-target="slide-out"
+                >
+                  <i class="fas fa-bars"></i>
+                </button>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
     </header>
 
     <!-- header end -->
 
-
     <!-- aboutUniversity start -->
 
     <div class="aboutUniversity">
-        <section class="container">
-            <div class="aboutUniversity__cart">
-                <h2 class="about__title__h2">E-reception</h2>
-                <ul class="aboutUniversity__menu">
-                    <li>
-                        <a href="index.html" class="aboutUniversity__menu__link">Main</a>
-                    </li>
+      <section class="container">
+        <div class="aboutUniversity__cart">
+          <h2 class="about__title__h2">E-reception</h2>
+          <ul class="aboutUniversity__menu">
+            <li>
+              <a href="index.html" class="aboutUniversity__menu__link">Main</a>
+            </li>
 
-                    <li>
-                        <a href="e_reception.html" class="aboutUniversity__menu__link">E-reception</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            <li>
+              <a href="e_reception.html" class="aboutUniversity__menu__link"
+                >E-reception</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
 
     <!-- aboutUniversity end -->
 
-
     <!-- E-reception start -->
 
     <div class="e_reception">
-        <section class="container">
-            <div class="e_reception__cart">
-                <form action="#!" class="e_reception__form">
-                    <label class="e_reception__label">
-                        <h4 class="e_reception__title__h4">F.I.O*</h4>
-                        <input type="text" placeholder="FIO" class="e_reception__input">
-                    </label>
-                    
-                    <label class="e_reception__label">
-                        <h4 class="e_reception__title__h4">Ta'lim turi*</h4>
-                        <select class="e_reception__select">
-                            <option selected>Kunduzgi</option>
-                            <option>Kechki</option>
-                            <option>Sirtqi</option>
-                        </select>
-                    </label>
+      <section class="container">
+        <div class="e_reception__cart">
+          <form action="#!" class="e_reception__form">
+            <label class="e_reception__label">
+              <h4 class="e_reception__title__h4">F.I.O*</h4>
+              <input type="text" placeholder="FIO" class="e_reception__input" />
+            </label>
 
-                    <label class="e_reception__label">
-                        <h4 class="e_reception__title__h4">Kursni tanlang!*</h4>
-                        <select class="e_reception__select">
-                            <option selected>1 kurs</option>
-                            <option>2 kurs</option>
-                            <option>3  kurs</option>
-                        </select>
-                    </label>
+            <label class="e_reception__label">
+              <h4 class="e_reception__title__h4">Ta'lim turi*</h4>
+              <select class="e_reception__select">
+                <option selected>Kunduzgi</option>
+                <option>Kechki</option>
+                <option>Sirtqi</option>
+              </select>
+            </label>
 
-                    <section class="e_reception__label">
-                        <h4 class="e_reception__title__h4">Kursni tanlang!*</h4>
-                        <input name="file" type="file" name="file" id="field__file-1" class="field__file e_reception__input__file" multiple>
-                        <label for="field__file-1" class="e_reception__label__file">
-                            <h5 class="e_reception__title__file">Faylni tanlang</h5>
-                            <h4 class="e_reception__title__h4__file">
-                                Fayl tanlanmagan
-                            </h4>
-                        </label>
-                    </section>
+            <label class="e_reception__label">
+              <h4 class="e_reception__title__h4">Kursni tanlang!*</h4>
+              <select class="e_reception__select">
+                <option selected>1 kurs</option>
+                <option>2 kurs</option>
+                <option>3 kurs</option>
+              </select>
+            </label>
 
-                    <section class="e_reception__label">
-                        <h4 class="e_reception__title__h4">Diplom yoki atestat*</h4>
-                        <input name="file" type="file" name="file" id="field__file-2" class="field__file e_reception__input__file" multiple>
-                        <label for="field__file-2" class="e_reception__label__file">
-                            <h5 class="e_reception__title__file">Faylni tanlang</h5>
-                            <h4 class="e_reception__title__h4__file">
-                                Fayl tanlanmagan
-                            </h4>
-                        </label>
-                    </section>
+            <section class="e_reception__label">
+              <h4 class="e_reception__title__h4">Kursni tanlang!*</h4>
+              <input
+                name="file"
+                type="file"
+                name="file"
+                id="field__file-1"
+                class="field__file e_reception__input__file"
+                multiple
+              />
+              <label for="field__file-1" class="e_reception__label__file">
+                <h5 class="e_reception__title__file">Faylni tanlang</h5>
+                <h4 class="e_reception__title__h4__file">Fayl tanlanmagan</h4>
+              </label>
+            </section>
 
-                    <label class="e_reception__label">
-                        <h4 class="e_reception__title__h4">Shaxsiy telefon raqam*</h4>
-                        <input type="tel" value="+998 " class="e_reception__input">
-                    </label>
-
-                    <label class="e_reception__label">
-                        <h4 class="e_reception__title__h4">Ota yoki Ona telefon raqami</h4>
-                        <input type="tel" value="+998 " class="e_reception__input">
-                    </label>
-                   
-                    <button type="submit" class="e_reception__button">Jo’natish <i class="fas fa-chevron-right"></i></button>
-                </form>
+            <div class="e_reception__img">
+              <img src="foto/file.png" alt="imgs" />
             </div>
-        </section>
+
+            <section class="e_reception__label">
+              <h4 class="e_reception__title__h4">Diplom yoki atestat*</h4>
+              <input
+                name="file"
+                type="file"
+                name="file"
+                id="field__file-2"
+                class="field__file e_reception__input__file"
+                multiple
+              />
+              <label for="field__file-2" class="e_reception__label__file">
+                <h5 class="e_reception__title__file">Faylni tanlang</h5>
+                <h4 class="e_reception__title__h4__file">Fayl tanlanmagan</h4>
+              </label>
+            </section>
+
+            <label class="e_reception__label">
+              <h4 class="e_reception__title__h4">Shaxsiy telefon raqam*</h4>
+              <input type="tel" value="+998 " class="e_reception__input" />
+              <h5 class="e_reception__title__h5">
+                Ushbu raqamga tasdiqlash kodi yuboriladi
+              </h5>
+            </label>
+
+            <label class="e_reception__label">
+              <h4 class="e_reception__title__h4">
+                Ota yoki Ona telefon raqami
+              </h4>
+              <input type="tel" value="+998 " class="e_reception__input" />
+            </label>
+
+            <button type="submit" class="e_reception__button">
+              Jo’natish <i class="fas fa-chevron-right"></i>
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
 
     <!-- E-reception end -->
-
 
     <!-- footer start -->
 
@@ -405,39 +500,63 @@
             <section class="container">
                 <div class="footer__cart">
                     <div class="footer__list">
+                        
                         <div class="footer__item__menu">
-                            <ul class="footer__menu">
-                                <li>
-                                    <a href="aboutUniversity.html" class="footer__menu__link">University</a>
-                                </li>
-
-                                <li>
-                                    <a href="bachelor.html" class="footer__menu__link">BACHELOR</a>
-                                </li>
-
-                                <li>
-                                    <a href="bachelor.html" class="footer__menu__link">MASTER</a>
-                                </li>
-
-                                <li>
-                                    <a href="research.html" class="footer__menu__link">Research</a>
-                                </li>
-                            </ul>
-
-                            <ul class="footer__menu">
-                                <li>
-                                    <a href="international.html" class="footer__menu__link">International</a>
-                                </li>
-
-                                <li>
-                                    <a href="studentsStudio.html" class="footer__menu__link">Students</a>
-                                </li>
-
-                                <li>
-                                    <a href="news.html" class="footer__menu__link">News</a>
-                                </li>
-                            </ul>
+                            <div class="footer__list__logo">
+                                <div class="footer__logo">
+                                    <a href="index.html">
+                                        <img src="foto/footerLogo.svg" alt="footerLogo">
+                                    </a>
+                                </div>
+                                <ul class="footer__icons__menu">
+                                    <li>
+                                        <a href="#!" class="footer__icons__link"><i class="fab fa-instagram"></i></a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="#!" class="footer__icons__link"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="#!" class="footer__icons__link"><i class="fab fa-telegram-plane"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__item__menu">
+                                <ul class="footer__menu">
+                                    <li>
+                                        <a href="aboutUniversity.html" class="footer__menu__link">University</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="bachelor.html" class="footer__menu__link">BACHELOR</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="bachelor.html" class="footer__menu__link">MASTER</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="research.html" class="footer__menu__link">Research</a>
+                                    </li>
+                                </ul>
+    
+                                <ul class="footer__menu">
+                                    <li>
+                                        <a href="international.html" class="footer__menu__link">International</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="studentsStudio.html" class="footer__menu__link">Students</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="news.html" class="footer__menu__link">News</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                        
 
                         <div class="footer__item__address">
                             <ul class="footer__list__address">
@@ -462,20 +581,6 @@
                                     </a>
                                 </li>
                             </ul>
-
-                            <ul class="footer__icons__menu">
-                                <li>
-                                    <a href="#!" class="footer__icons__link"><i class="fab fa-instagram"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#!" class="footer__icons__link"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-
-                                <li>
-                                    <a href="#!" class="footer__icons__link"><i class="fab fa-telegram-plane"></i></a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -493,8 +598,7 @@
     </footer>
 
     <!-- footer end -->
-    
-                                                                                
+
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/fancyapps-ui.js"></script>
     <script src="js/fancybox_main.js"></script>
@@ -504,5 +608,5 @@
     <script src="js/slic.js"></script>
     <script src="js/mar_ru.js"></script>
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
