@@ -18,6 +18,7 @@
 @import '_international';
 @import '_careers.scss';
 @import '_library';
+@import '_biznigCompus';
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -1370,7 +1371,8 @@ h1,h2{
     .researchAll__cart,
     .research__cart,
     .careers__cart,
-    .library__cart{
+    .library__cart,
+    .biznigCompus__cart{
        margin-left: 60px;
        margin-right: 60px;
     }
@@ -1412,7 +1414,8 @@ h1,h2{
     .researchStatistics,
     .international,
     .careers,
-    .library{
+    .library,
+    .biznigCompus{
         margin-bottom: 60px;
     }
 
@@ -1787,7 +1790,8 @@ h1,h2{
     .international,
     .careers,
     .library,
-    .library__list__menu{
+    .library__list__menu,
+    .biznigCompus{
         margin-bottom: 30px;
     }
 
@@ -1828,7 +1832,8 @@ h1,h2{
     .researchAll__cart,
     .research__cart,
     .careers__cart,
-    .library__cart{
+    .library__cart,
+    .biznigCompus__cart{
        margin-left: 30px;
        margin-right: 30px;
     }
